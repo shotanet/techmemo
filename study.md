@@ -10,11 +10,16 @@
 
 ## resemble.js
 
-[](https://www.npmjs.com/package/resemblejs)
+[https://www.npmjs.com/package/resemblejs](https://www.npmjs.com/package/resemblejs)
 
 ```script:title
 npm install resemblejs
 ```
+
+```script:title
+getDiff('resemblejs/1.png','resemblejs/2.png','resemblejs/output2.png');
+```
+
 
 ## markdown記法
 
