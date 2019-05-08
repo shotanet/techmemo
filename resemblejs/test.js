@@ -1,7 +1,7 @@
 const compareImages = require("resemblejs/compareImages");
 const fs = require("mz/fs");
 
-async function getDiff() {
+async function getDiff(filename1,filename2,outputname) {
     const options = {
         output: {
             errorColor: {
@@ -22,12 +22,12 @@ async function getDiff() {
     // The parameters can be Node Buffers
     // data is the same as usual with an additional getBuffer() function
     const data = await compareImages(
-        await fs.readFile("resemblejs/1.png"),
-        await fs.readFile("resemblejs/1.png"),
+        await fs.readFile(filename1),
+        await fs.readFile(filename2),
         options
     );
 
-    await fs.writeFile("resemblejs/output.png", data.getBuffer());
+    await fs.writeFile(outputname, data.getBuffer());
 }
 
-getDiff();
+getDiff('resemblejs/1.png','resemblejs/2.png','resemblejs/output2.png');
