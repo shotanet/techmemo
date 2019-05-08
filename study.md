@@ -10,9 +10,11 @@
 
 ## resemble.js
 
-https://www.npmjs.com/package/resemblejs
+[](https://www.npmjs.com/package/resemblejs)
 
+```script:title
 npm install resemblejs
+```
 
 ## markdown記法
 
@@ -40,4 +42,5 @@ int i = 0; //コード
 >> テキスト
 
 ## javascript(ES6)の基本
+
 ### await async
