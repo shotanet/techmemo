@@ -30,4 +30,4 @@ async function getDiff(filename1,filename2,outputname) {
     await fs.writeFile(outputname, data.getBuffer());
 }
 
-getDiff('resemblejs/1.png','resemblejs/2.png','resemblejs/output2.png');
+getDiff('resemblejs/local.png','resemblejs/stg.png','resemblejs/output2.png');
